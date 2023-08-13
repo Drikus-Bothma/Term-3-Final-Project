@@ -1,4 +1,4 @@
-/* font-family: 'GFS Didot', serif;
+/* font-family: 'Didot', serif;
 font-family: 'Nunito Sans', sans-serif;
 font-family: 'Playfair', serif; */
 body{
@@ -14,7 +14,7 @@ nav{
 #name{
     margin-left: 580px;
     color: #DDC083;
-    font-family: 'GFS Didot', serif;
+    font-family: 'Didot', serif;
     font-size: 50px;
     margin-top: -10px;
 }
@@ -43,7 +43,7 @@ nav{
     margin-right: 20px;
 }
 #dropdownMenuButton{
-    width: 60px;
+    width: 80px;
     height: 50px;
     background-color: #849484;
     margin-bottom: -60px;
@@ -70,7 +70,7 @@ nav{
 .headings{
     text-align: center;
     color: white;
-    font-family: 'GFS Didot', serif;
+    font-family: 'Didot', serif;
     padding-top: 10px;
     font-size: 50px;
 }
@@ -150,7 +150,7 @@ nav{
 .deals-btn{
     width: 150px;
     height: 50px;
-    font-family: 'GFS Didot', serif;
+    font-family: 'Didot', serif;
     color: white;
     font-size: 20px;
     background-color: #849484;
@@ -161,10 +161,15 @@ nav{
     cursor: pointer;
 }
 
+.deals-btn:hover{
+    background-color: #333b33;
+    cursor: pointer;
+}
+
 .imp-btn{
     width: 150px;
     height: 50px;
-    font-family: 'GFS Didot', serif;
+    font-family: 'Didot', serif;
     color: white;
     font-size: 20px;
     background-color: #0E262C;
@@ -174,6 +179,50 @@ nav{
     margin-right: 13px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+.imp-btn:hover{
+    background-color: #1c4d59;
+}
+
+.info-btn{
+    width: 150px;
+    height: 50px;
+    font-family: 'Didot', serif;
+    color: white;
+    font-size: 20px;
+    background-color: #849484;
+    border-radius: 10px;
+    border: #0E262C;
+    cursor: pointer;
+    margin-left: 230px;
+    margin-top: 170px;
+}
+
+.overlay{
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0;
+}
+
+.overlay:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.overlay2{
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    opacity: 0;
+}
+
+.overlay2:hover{
+    cursor: pointer;
+    opacity: 1;
 }
 
 footer{
@@ -187,7 +236,7 @@ footer{
     padding-top: 20px;
     float: left;
     color: #DDC083;
-    font-family: 'GFS Didot', serif;
+    font-family: 'Didot', serif;
     font-size: 35px;
     margin-left: 10px;
 }

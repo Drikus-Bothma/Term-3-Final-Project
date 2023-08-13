@@ -6,7 +6,7 @@
     <title>Golden Horizon Trips</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/trips.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,96 @@
 
 </head>
 <body>
+    <nav>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Menu
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>
+        <a href=""><img class="searchImg" src="../assets/search_icon.svg"></a>
+        <h1 id="nameGH">Golden Horizon</h1>
+        <a href=""><img class="cartImg" src="../assets/shopping-cart.svg"></a>
+        <a href=""><img class="userImg"  src="../assets/user.svg"></a>
+    </nav>
+    <header>
+        <p class="tripsH1">Embark on Elegance:</p>
+        <p class="tripsH2">Unveiling Unforgettable</p>
+        <p class="tripsH3">Journeys at Sea</p>
+    </header>
     
+    <p class="headings"><u>TRIPS</u></p>
+
+    <div class="container-fluid">
+        <div class="row" id="tripsContainer">
+            <!-- <template id="tripsCardTemp"> -->
+                <div class="col-12">
+                    <div class="col-3" id="card">
+                        <p class="tripsHeadings" id="name"><u>Mauritius Tour</u></p>
+                        <p class="trips-content" id="location">Location: Mauritius</p>
+                        <p class="trips-content" id="duration">Duration: 5 Days</p>    
+                        <p class="trips-content" id="price">Price: R7 250 pp</p>    
+                        <p class="trips-content" id="date">Travel Dates: 05 August 2023</p>    
+                        <p class="trips-content" id="departure">Departure: Durban Harbour</p>
+                        <p class="tripsMessage" id="message">Experience the amazing view of Mauritius with us.</p>
+                    </div>
+                    
+                    <div class="col-3" id="card">
+                        <div class="overlay">
+                            <button class="add-btn"><strong>+</strong></button>
+                            <button class="info-btn">More info</button>
+                        </div>
+                        <img src="../assets/trip1.jpg" class="card-img-top" alt="...">
+                    </div>
+                   
+                    <div class="col-3" id="card">
+                        <p class="tripsHeadings" id="name"><u>Mozambique islands</u></p>
+                        <p class="trips-content" id="location">Location: Mozambique</p>
+                        <p class="trips-content" id="duration">Duration: 10 Days</p>    
+                        <p class="trips-content" id="price">Price: R8 500 pp</p>    
+                        <p class="trips-content" id="date">Travel Dates: 07 August 2023</p>    
+                        <p class="trips-content" id="departure">Departure: Durban Harbour</p>
+                        <p class="tripsMessage" id="message">Have fun on all the different islands of Mozambique.</p>
+                    </div>
+
+                    <div class="col-3" id="card">
+                        <div class="overlay2">
+                            <button class="add-btn"><strong>+</strong></button>
+                            <button class="info-btn">More info</button>
+                        </div>
+                        <img src="../assets/trip2.jpg" class="card-img-top2" alt="...">
+                    </div>                </div>
+            <!-- </template> -->
+        </div>
+        
+    </div>
+    <footer>
+        <h1 id="name2">Golden Horizon</h1>
+
+        <img class="logo-img" src="../assets/Logo.png">
+
+        <div class="social1">
+            <a href="https://www.instagram.com/"><img src="../assets/instagram_icon.svg"></a>
+        </div>
+        <div class="social2">
+            <a href="https://twitter.com/"><img src="../assets/twitter_icon.svg"></a>
+        </div>
+        <div class="social3">
+            <a href="https://www.facebook.com/"><img src="../assets/facebook_icon.svg"></a>
+        </div>
+        <div class="social4">
+            <a href="https://www.youtube.com/"><img src="../assets/youtube_icon.svg"></a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="../js/trips.js"></script>
 </body>
 </html>
