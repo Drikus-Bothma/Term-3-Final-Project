@@ -17,7 +17,7 @@ const trips = [
     "date": "7 August 2023",
     "departure": "Durban Harbour",
     "message": "Have fun on all the different islands of Mozambique.",
-    "image": "trip.jpg"
+    "image": "trip2.jpg"
 },
 {
     "name": "Tropical Tour ",
@@ -85,13 +85,13 @@ $(document).ready(function(){
 });
 
 function loadTrips () {
-    for (let i = 0; i < trips.length; i++) {
+    for (let i = 0; i < 4; i++) {
         console.log(trips[i]);
 
         $("#tripsContainer").append($("#tripsCardTemp").html());
 
         let currentChild = $("#tripsContainer").children().eq(i+1);
-        $(currentChild).find(".card-img-top").attr('src','../assets/' + trips[i].jpg);
+        $(currentChild).find(".card-img-top").attr('src','../assets/' + trips[i].image);
         $(currentChild).find("#name").text(trips[i].name);
         $(currentChild).find("#location").text('Location: ' + trips[i].location);
         $(currentChild).find("#duration").text('Duration: ' + trips[i].duration);
@@ -100,5 +100,13 @@ function loadTrips () {
         $(currentChild).find("#departure").text('Departure: ' + trips[i].departure);
         $(currentChild).find("#message").text(trips[i].message);
 
-    }
+        $(currentChild).find(".card-img-topR").attr('src','../assets/' + trips[i+4].image);
+        $(currentChild).find("#nameR").text(trips[i+4].name);
+        $(currentChild).find("#locationR").text('Location: ' + trips[i+4].location);
+        $(currentChild).find("#durationR").text('Duration: ' + trips[i+4].duration);
+        $(currentChild).find("#priceR").text('Price: ' + trips[i+4].price);
+        $(currentChild).find("#dateR").text('Travel Dates: ' + trips[i+4].date);
+        $(currentChild).find("#departureR").text('Departure: ' + trips[i+4].departure);
+        $(currentChild).find("#messageR").text(trips[i+4].message);
+    } 
 }
