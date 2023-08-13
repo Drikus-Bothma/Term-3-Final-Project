@@ -1,0 +1,237 @@
+/* font-family: 'GFS Didot', serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Playfair', serif; */
+body{
+    background-color: #3c3c3c;
+}
+
+nav{
+    width: 100%;
+    height: 90px;
+    background-color: #1C1A1D;
+}
+
+#name{
+    margin-left: 580px;
+    color: #DDC083;
+    font-family: 'GFS Didot', serif;
+    font-size: 50px;
+    margin-top: -10px;
+}
+
+.searchImg{
+    width: 50px;
+    height: 70px;
+    float: left;
+    margin-left: 120px;
+    margin-top: -15px;
+}
+
+.cartImg{
+    width: 50px;
+    height: 70px;
+    float: right;
+    margin-top: -75px;
+    margin-right: 80px;
+}
+
+.userImg{
+    width: 50px;
+    height: 70px;
+    float: right;
+    margin-top: -75px;
+    margin-right: 20px;
+}
+#dropdownMenuButton{
+    width: 60px;
+    height: 50px;
+    background-color: #849484;
+    margin-bottom: -60px;
+    margin-left: 30px;
+}
+
+#info{
+    height: 500px;
+    margin: 30px;
+    background-color: #0E262C;
+    border-radius: 10px;
+    float: left;
+}
+
+#weather{
+    height: 500px;
+    margin-top: 30px;
+    background-color: #0E262C;
+    border-radius: 10px;
+    float: right;
+    margin-left: 20px;
+}
+
+.headings{
+    text-align: center;
+    color: white;
+    font-family: 'GFS Didot', serif;
+    padding-top: 10px;
+    font-size: 50px;
+}
+
+.info-content{
+    text-align: center;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+#FT-col{
+    height: 400px;
+    background-color: #0E262C;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#trip-con{
+    height: 400px;
+    color: white;
+    border-radius: 10px;
+}
+
+#trip-img{
+    height: 400px;
+    margin-top: -400px;
+    background-image: url(../assets/Car.jpg);
+    background-position: center;
+    background-size: cover;
+    float: right;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.trips-content{
+    font-size: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-left: 50px;
+}
+
+#trip-con2{
+    height: 400px;
+    color: white;
+    border-radius: 10px;
+    float: right;
+}
+
+#trip-img2{
+    height: 400px;
+    background-image: url(../assets/Nor.jpg);
+    background-position: center;
+    background-size: cover;
+    float: left;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.trips-content2{
+    font-size: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-left: 50px;
+}
+
+#trip-img3{
+    height: 400px;
+    margin-top: -400px;
+    background-image: url(../assets/Thai.jpg);
+    background-position: center;
+    background-size: cover;
+    float: right;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.deals-btn{
+    width: 150px;
+    height: 50px;
+    font-family: 'GFS Didot', serif;
+    color: white;
+    font-size: 20px;
+    background-color: #849484;
+    border-radius: 10px;
+    border: #0E262C;
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.imp-btn{
+    width: 150px;
+    height: 50px;
+    font-family: 'GFS Didot', serif;
+    color: white;
+    font-size: 20px;
+    background-color: #0E262C;
+    border-radius: 10px;
+    border: #0E262C;
+    float: right;
+    margin-right: 13px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    margin-top: 130px;
+    background-color: #1C1A1D;
+}
+
+#name2{
+    padding-top: 20px;
+    float: left;
+    color: #DDC083;
+    font-family: 'GFS Didot', serif;
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+.logo-img{
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 480px;
+}
+
+.social1{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-left: 10px;
+    margin-right: 50px;
+    margin-top: 15px;
+}
+
+.social2{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.social3{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.social4{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
