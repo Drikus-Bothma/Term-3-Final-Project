@@ -13,40 +13,32 @@ nav{
     color: #DDC083;
     font-family: 'Didot', serif;
     font-size: 50px;
-    margin-top: -10px;
+    padding-top: 10px;
     text-decoration: none;
-}
-
-.searchImg{
-    width: 50px;
-    height: 70px;
-    float: left;
-    margin-left: 120px;
-    margin-top: -15px;
 }
 
 .cartImg{
     width: 50px;
     height: 70px;
     float: right;
-    margin-top: -75px;
-    margin-right: 80px;
+    margin-top: -68px;
+    margin-right: 20px;
 }
 
 .userImg{
     width: 50px;
     height: 70px;
-    float: right;
-    margin-top: -75px;
-    margin-right: 20px;
+    float: left;
+    margin-left: 20px;
+    padding-top: 10px;
 }
 
-#dropdownMenuButton{
-    width: 80px;
-    height: 50px;
-    background-color: #849484;
-    margin-bottom: -60px;
-    margin-left: 30px;
+.shipImg{
+    width: 50px;
+    height: 70px;
+    float: right;
+    margin-top: -70px;
+    margin-right: 90px;
 }
 
 header{

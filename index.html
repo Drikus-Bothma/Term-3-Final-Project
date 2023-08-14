@@ -15,43 +15,32 @@
 </head>
 <body>
     <nav>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Menu
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-        </div>
-        <a href=""><img class="searchImg" src="assets/search_icon.svg"></a>
+        <a href="pages/index.html"><img class="userImg"  src="assets/user.svg"></a>
         <h1 id="name">Golden Horizon</h1>
+        <a href="pages/trips.html"><img class="shipImg"  src="assets/ship-side.svg"></a>
         <a href="pages/checkOut.html"><img class="cartImg" src="assets/shopping-cart.svg"></a>
-        <a href="pages/trips.html"><img class="userImg"  src="assets/user.svg"></a>
+        
     </nav>
 
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="assets/Main page.jpg" alt="First slide">
+            <img src="assets/Main page.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="assets/cruise-ship-sunset-scaled.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Third slide">
+            <img src="assets/cruise-ship-sunset-scaled.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
+          <span class="visually-hidden">Next</span>
+        </button>
     </div>
+
 
     <div class="container-fluid">
         <div class="row">
@@ -62,6 +51,7 @@
 
             <div class="col-4" id="weather">
                 <p class="headings"><u>WEATHER</u></p>
+                <div id="ww_a39b686a5c9cc" v='1.3' loc='id' a='{"t":"horizontal","lang":"en","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"rgba(255,255,255,1)","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>More forecasts: <a href="https://sharpweather.com/weather_paris/week/" id="ww_a39b686a5c9cc_u" target="_blank">Paris weather for this week</a></div><script async src="https://app2.weatherwidget.org/js/?id=ww_a39b686a5c9cc"></script>
             </div>
         </div>
     </div>
