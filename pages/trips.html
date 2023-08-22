@@ -27,6 +27,31 @@
     </header>
     
     <p class="headings"><u>TRIPS</u></p>
+    <div class="row align-items-center mt-4">
+
+        <!-- Filter Radio Buttons -->
+
+        <div class="btn-group col-auto" role="group">
+          <input type="radio" class="btn-check" name="filterRadio" id="allTripsFilter" value="" autocomplete="off" checked>
+          <label class="btn btn-outline-success" for="allPlantsFilter">All Trips</label>
+        
+          <input type="radio" class="btn-check" name="filterRadio" id="Less15DaysFilter" autocomplete="off" value="less">
+          <label class="btn btn-outline-success" for="Less15DaysFilter"><i class="bi-brightness-high"></i> Less than 7 days </label>
+        
+          <input type="radio" class="btn-check" name="filterRadio" id="More15DaysFilter" autocomplete="off" value="more">
+          <label class="btn btn-outline-success" for="More15DaysFilter"><i class="bi-brightness-low"></i> More than 7 days</label>
+        </div>
+
+        <!-- Sorting Radio Buttons -->
+
+        <div class="btn-group col-auto" role="group">
+          <input type="radio" class="btn-check" name="sortRadio" id="defaultSort" value="date added" autocomplete="off" checked>
+          <label class="btn btn-outline-secondary" for="defaultSort"><i class="bi bi-calendar4"></i> Alphabetically Ascending</label>
+        
+          <input type="radio" class="btn-check" name="sortRadio" id="priceSort" value="low to high" autocomplete="off">
+          <label class="btn btn-outline-secondary" for="priceSort"><i class="bi bi-sort-down-alt"></i> Alphabetically Descending</label>
+        </div>
+      </div>
 
     <div class="container-fluid">
         <div class="row" id="tripsContainer">

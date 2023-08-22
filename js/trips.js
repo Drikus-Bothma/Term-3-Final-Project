@@ -7,7 +7,8 @@ const trips = [
     "date": "5 August 2023",
     "departure": "Durban Harbour",
     "message": "Experience the amazing view of Mauritius with us.",
-    "image": "trip1.jpg"
+    "image": "trip1.jpg",
+    "days": "less"
 },
 {
     "name": "Mozambique islands",
@@ -17,7 +18,8 @@ const trips = [
     "date": "7 August 2023",
     "departure": "Durban Harbour",
     "message": "Have fun on all the different islands of Mozambique.",
-    "image": "trip2.jpg"
+    "image": "trip2.jpg",
+    "days": "more"
 },
 {
     "name": "Tropical Tour ",
@@ -27,7 +29,8 @@ const trips = [
     "date": "5 August 2023",
     "departure": "Richards Bay",
     "message": "If you have not been to this island you are missing out.",
-    "image": "trip3.jpg"
+    "image": "trip3.jpg",
+    "days": "less"
 },
 {
     "name": "White Beach",
@@ -37,7 +40,8 @@ const trips = [
     "date": "14 August 2023",
     "departure": "Cape Town",
     "message": "This white sand is something you need to see.",
-    "image": "trip4.jpg"
+    "image": "trip4.jpg",
+    "days": "more"
 },
 {
     "name": "Under The Sea",
@@ -47,7 +51,8 @@ const trips = [
     "date": "19 September 2023",
     "departure": "East London",
     "message": "Come snorkel here in one of the top places in the world.",
-    "image": "trip5.jpg"
+    "image": "trip5.jpg",
+    "days": "less"
 },
 {
     "name": "Luxury At Its Finest",
@@ -57,27 +62,30 @@ const trips = [
     "date": "12 November 2023",
     "departure": "Cape Town",
     "message": "Swim in your own secluded piece of heaven.",
-    "image": "trip6.jpg"
+    "image": "trip6.jpg",
+    "days": "more"
 },
 {
-    "name": "Cave Of  Wonders",
+    "name": "Cave Of Wonders",
     "location": "Dubai",
     "duration": "10 Days",
     "price": "R17 500 pp",
     "date": "6 October 2023",
     "departure": "Durban Harbour",
     "message": "Some say the cave can grant wishes to whoever is worthy",
-    "image": "trip7.jpg"
+    "image": "trip7.jpg",
+    "days": "more"
 },
 {
     "name": "The Great Lake",
     "location": "Lake Malawi",
-    "duration": "7 Days",
+    "duration": "8 Days",
     "price": "R7 000 pp",
     "date": "10 December 2023",
     "departure": "Port Elizabeth",
     "message": "Dive off of the long bridge that connects all the views.",
-    "image": "trip8.jpg"
+    "image": "trip8.jpg",
+    "days": "more"
 }];
 
 $(document).ready(function(){
@@ -85,7 +93,7 @@ $(document).ready(function(){
 });
 
 function loadTrips () {
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < trips.length/2; i++) {
         console.log(trips[i]);
 
         $("#tripsContainer").append($("#tripsCardTemp").html());
@@ -109,4 +117,61 @@ function loadTrips () {
         $(currentChild).find("#departureR").text('Departure: ' + trips[i+4].departure);
         $(currentChild).find("#messageR").text(trips[i+4].message);
     } 
+}
+
+let appliedFilter = "";
+let appliedSort = "alphabetically";
+
+
+$("input[name='filterRadio']").click(function(){
+  appliedFilter = $(this).attr('value');
+
+  filterSortTrips();
+});
+
+$("input[name='sortRadio']").click(function(){
+  appliedSort = $(this).attr('value');
+
+  filterSortTrips();
+});
+
+function filterSortTrips() {
+  
+  let filteredSortedArrTrips = [];
+
+  console.log(appliedFilter);
+  console.log(appliedSort);
+
+
+  if (appliedFilter) {
+    filteredSortedArrTrips = arrTrips.filter(trips => trips.days == appliedFilter);
+  } else {
+    filteredSortedArrTrips = arrTrips;
+  }
+
+  // Sort Plants
+
+  if (appliedSort == "") {
+
+    // Sort plants from the lowest to highest price
+    filteredSortedArrPlants = filteredSortedArrPlants.sort((a, b) => {
+      return a.price - b.price;
+    });
+
+  } else if (appliedSort == "date added") {
+
+    // Sort plants from the newest to oldest
+    filteredSortedArrPlants = filteredSortedArrPlants.sort((a, b) => {
+      let da = new Date(a.addedDate);
+      let db = new Date(b.addedDate);
+    
+      return db - da;
+    });
+
+  }
+
+  console.log(filteredSortedArrPlants)
+
+  loadPlants(filteredSortedArrPlants);
+
 }
