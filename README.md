@@ -1,9 +1,9 @@
 
 ![Golden Horizon](/assets/Logo.JPG)
 
-This is a demo project which aims to showcase more advanced javascript and jQuery to first year development students.
+If you click the link below it will take you to my Walkthrough video
 
-[Watch the demo »](https://drive.google.com/drive/folders/1HVlFuTX8YJ-y2Cf1UulzB8Twe81VeL81?usp=drive_link)
+[Watch the video »](https://drive.google.com/drive/folders/1HVlFuTX8YJ-y2Cf1UulzB8Twe81VeL81?usp=drive_link)
 
 ## Table of Contents
 
