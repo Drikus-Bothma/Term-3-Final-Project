@@ -15,44 +15,66 @@
 </head>
 <body>
     <nav>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Menu
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-        </div>
-        <a href=""><img class="searchImg" src="assets/search_icon.svg"></a>
+        <a href="../index.html"><img class="userImg"  src="../assets/user.svg"></a>
         <h1 id="name">Golden Horizon</h1>
-        <a href="pages/checkOut.html"><img class="cartImg" src="assets/shopping-cart.svg"></a>
-        <a href="pages/trips.html"><img class="userImg"  src="assets/user.svg"></a>
+        <a href="trips.html"><img class="shipImg"  src="../assets/ship-side.svg"></a>
+        <a href="checkOut.html"><img class="cartImg" src="../assets/shopping-cart.svg" style="border-bottom: 4px solid #849484;"></a>
+        
     </nav>
 
+    <h1 class="headings"><u>Checkout</u></h1>
 
+    <div class="intro">
+        Welcome to the Checkout Page: Secure Your Journey!</br>
+        Thank you for choosing Golden Horizon for your upcoming voyage. You're just one step away from embarking on a remarkable adventure that promises unforgettable memories. Our Checkout Page is designed to ensure a smooth and secure booking process, so you can focus on the excitement of your upcoming journey.
+        Here, you'll be able to review your selected trips, make any final adjustments, and securely complete your reservation. We're dedicated to providing you with exceptional service, and your satisfaction is our top priority.
+        Sit back, relax, and let us assist you in finalizing your travel plans. Your dream cruise is just a few clicks away. Thank you for entrusting Golden Horizon with your travel experience, and we can't wait to welcome you on board!
+    </div>
+
+    <table class="table table-dark table-striped" id="tripTable">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Trip Name</th>
+            <th scope="col">Trip Code</th>
+            <th scope="col">Location</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Date</th>
+            <th scope="col">Departure</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Remove</th>
+          </tr>
+        </thead>
+        <tbody id="trip">
+          
+        </tbody>
+      </table>
+
+    <div id="totalCost">Total Cost: R0.00</div>
+    <button id="removeAll">Remove All</button>
+    <button type="button" class="btn btn-success" onclick="Pay()">Pay Point</button>
     
-
+   <footer>
+    <div class="space"></div>
     
-    <footer>
-        <h1 id="name2">Golden Horizon</h1>
+    <h1 id="name2" class="nameF">Golden Horizon</h1>
 
-        <img class="logo-img" src="assets/Logo.png">
+    <img class="logo-img" src="../assets/Logo.png">
 
-        <div class="social1">
-            <a href="https://www.instagram.com/"><img src="assets/instagram_icon.svg"></a>
-        </div>
-        <div class="social2">
-            <a href="https://twitter.com/"><img src="assets/twitter_icon.svg"></a>
-        </div>
-        <div class="social3">
-            <a href="https://www.facebook.com/"><img src="assets/facebook_icon.svg"></a>
-        </div>
-        <div class="social4">
-            <a href="https://www.youtube.com/"><img src="assets/youtube_icon.svg"></a>
-        </div>
-    </footer>
+    <div class="social1">
+        <a href="https://www.instagram.com/"><img src="../assets/instagram_icon.svg"></a>
+    </div>
+    <div class="social2">
+        <a href="https://twitter.com/"><img src="../assets/twitter_icon.svg"></a>
+    </div>
+    <div class="social3">
+        <a href="https://www.facebook.com/"><img src="../assets/facebook_icon.svg"></a>
+    </div>
+    <div class="social4">
+        <a href="https://www.youtube.com/"><img src="../assets/youtube_icon.svg"></a>
+    </div>
+</footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

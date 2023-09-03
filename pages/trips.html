@@ -17,7 +17,7 @@
     <nav>
         <a href="../index.html"><img class="userImg"  src="../assets/user.svg"></a>
         <h1 id="nameGH">Golden Horizon</h1>
-        <a href="../pages/trips.html"><img class="shipImg"  src="../assets/ship-side.svg"></a>
+        <a href="../pages/trips.html"><img class="shipImg"  src="../assets/ship-side.svg" style="border-bottom: 4px solid #849484;"></a>
         <a href="../pages/checkOut.html"><img class="cartImg" src="../assets/shopping-cart.svg"></a>
     </nav>
     <header>
@@ -25,33 +25,30 @@
         <p class="tripsH2">Unveiling Unforgettable</p>
         <p class="tripsH3">Journeys at Sea</p>
     </header>
+
+    <div class="intro">
+        Welcome to Golden Horizon's Trips Page! Embark on a journey of elegance and adventure as we unveil a world of unforgettable voyages at sea. Our carefully curated selection of trips offers a diverse range of experiences, from tranquil getaways to exciting explorations. Whether you're dreaming of pristine beaches, exotic destinations, or cultural discoveries, you'll find the perfect escape with us. Explore our collection of meticulously planned trips, each designed to provide you with an extraordinary and immersive experience. Join us as we set sail to new horizons and create memories that will last a lifetime.
+    </div>
     
     <p class="headings"><u>TRIPS</u></p>
-    <div class="row align-items-center mt-4">
 
-        <!-- Filter Radio Buttons -->
-
-        <div class="btn-group col-auto" role="group">
-          <input type="radio" class="btn-check" name="filterRadio" id="allTripsFilter" value="" autocomplete="off" checked>
-          <label class="btn btn-outline-success" for="allPlantsFilter">All Trips</label>
+    <div id="filterOptions">
+        <label for="tripType" style="color: white;">Filter by Type:</label>
+        <select id="tripType">
+          <option value="all">All Trips</option>
+          <option value="short">Short Trips</option>
+          <option value="long">Long Trips</option>
+          <option value="singleDes">Single Destination</option>
+          <option value="multiDes">Multi Destination</option>
+          <option value="round">Round Trips</option>
+        </select>
         
-          <input type="radio" class="btn-check" name="filterRadio" id="Less15DaysFilter" autocomplete="off" value="less">
-          <label class="btn btn-outline-success" for="Less15DaysFilter"><i class="bi-brightness-high"></i> Less than 7 days </label>
-        
-          <input type="radio" class="btn-check" name="filterRadio" id="More15DaysFilter" autocomplete="off" value="more">
-          <label class="btn btn-outline-success" for="More15DaysFilter"><i class="bi-brightness-low"></i> More than 7 days</label>
-        </div>
-
-        <!-- Sorting Radio Buttons -->
-
-        <div class="btn-group col-auto" role="group">
-          <input type="radio" class="btn-check" name="sortRadio" id="defaultSort" value="date added" autocomplete="off" checked>
-          <label class="btn btn-outline-secondary" for="defaultSort"><i class="bi bi-calendar4"></i> Alphabetically Ascending</label>
-        
-          <input type="radio" class="btn-check" name="sortRadio" id="priceSort" value="low to high" autocomplete="off">
-          <label class="btn btn-outline-secondary" for="priceSort"><i class="bi bi-sort-down-alt"></i> Alphabetically Descending</label>
-        </div>
-      </div>
+        <label for="sortOrder" style="color: white;">Sort by Price:</label>
+        <select id="sortOrder">
+          <option value="asc">Low to High</option>
+          <option value="desc">High to Low</option>
+        </select>
+    </div>
 
     <div class="container-fluid">
         <div class="row" id="tripsContainer">
@@ -60,6 +57,8 @@
                     <div class="col-3" id="card">
                         <p class="tripsHeadings" id="name"><u>Mauritius Tour</u></p>
                         <p class="trips-content" id="location">Location: Mauritius</p>
+                        <p class="trips-content" id="type">How Many Destinations: One</p>
+                        <p class="trips-content" id="return">Round Trip: Yes</p>
                         <p class="trips-content" id="duration">Duration: 5 Days</p>    
                         <p class="trips-content" id="price">Price: R7 250 pp</p>    
                         <p class="trips-content" id="date">Travel Dates: 05 August 2023</p>    
@@ -69,7 +68,7 @@
                     
                     <div class="col-3" id="card">
                         <div class="overlay">
-                            <button class="add-btn"><strong>+</strong></button>
+                            <button class="add-btn" onclick="AddToCart(); SubmitTrip()"><strong>+</strong></button>
                             <button class="info-btn">More info</button>
                         </div>
                         <img src="../assets/trip1.jpg" class="card-img-top" alt="...">
@@ -78,6 +77,8 @@
                     <div class="col-3" id="card">
                         <p class="tripsHeadings" id="nameR"><u>Mozambique islands</u></p>
                         <p class="trips-content" id="locationR">Location: Mozambique</p>
+                        <p class="trips-content" id="typeR">How Many Destinations: Two</p>
+                        <p class="trips-content" id="returnR">Round Trip: No</p>
                         <p class="trips-content" id="durationR">Duration: 10 Days</p>    
                         <p class="trips-content" id="priceR">Price: R8 500 pp</p>    
                         <p class="trips-content" id="dateR">Travel Dates: 07 August 2023</p>    
@@ -87,11 +88,11 @@
 
                     <div class="col-3" id="card">
                         <div class="overlay">
-                            <button class="add-btn"><strong>+</strong></button>
+                            <button class="add-btn" onclick="AddToCart(); SubmitTrip()"><strong>+</strong></button>
                             <button class="info-btn">More info</button>
                         </div>
                         <img src="../assets/trip2.jpg" class="card-img-topR" alt="...">
-                    </div>                </div>
+                    </div>                
             </template>
         </div>
     </div>
@@ -99,7 +100,9 @@
     <a href="../pages/checkOut.html"><button type="button" class="imp-btn">CHECK OUT</button></a>
     
     <footer>
-        <h1 id="name2">Golden Horizon</h1>
+        <div class="space"></div>
+        
+        <h1 id="name2" class="nameF">Golden Horizon</h1>
 
         <img class="logo-img" src="../assets/Logo.png">
 

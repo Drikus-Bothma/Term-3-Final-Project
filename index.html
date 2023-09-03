@@ -15,20 +15,22 @@
 </head>
 <body>
     <nav>
-        <a href="pages/index.html"><img class="userImg"  src="assets/user.svg"></a>
+        <a href="pages/index.html" ><img class="userImg"  src="assets/user.svg" style="border-bottom: 4px solid #849484;"></a>
         <h1 id="name">Golden Horizon</h1>
         <a href="pages/trips.html"><img class="shipImg"  src="assets/ship-side.svg"></a>
         <a href="pages/checkOut.html"><img class="cartImg" src="assets/shopping-cart.svg"></a>
-        
     </nav>
 
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="assets/Main page.jpg" class="d-block w-100" alt="...">
+            <img src="assets/Main page copy.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
             <img src="assets/cruise-ship-sunset-scaled.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/slide3.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -51,9 +53,76 @@
 
             <div class="col-4" id="weather">
                 <p class="headings" ><u>WEATHER</u></p>
-                <p class="currentTemp" id="currentTemp">12</p>
-                <!-- <div id="ww_a39b686a5c9cc" v='1.3' loc='id' a='{"t":"horizontal","lang":"en","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"rgba(255,255,255,1)","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>More forecasts: <a href="https://sharpweather.com/weather_paris/week/" id="ww_a39b686a5c9cc_u" target="_blank">Paris weather for this week</a></div><script async src="https://app2.weatherwidget.org/js/?id=ww_a39b686a5c9cc"></script> -->
+                <p style="color: white;">The weather in New York is:</p>
+                <p class="currentTemp" id="currentTemp"></p>
+                <p style="color: white;">And in Paris</p>
+                <div id="ww_a39b686a5c9cc" v='1.3' loc='id' a='{"t":"horizontal","lang":"en","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"rgba(255,255,255,1)","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>More forecasts: <a href="https://sharpweather.com/weather_paris/week/" id="ww_a39b686a5c9cc_u" target="_blank">Paris weather for this week</a></div><script async src="https://app2.weatherwidget.org/js/?id=ww_a39b686a5c9cc"></script>
             </div>
+        </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Why Featured Trips
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                A "Featured Trips" section on your homepage is beneficial because it:</br>
+
+                1. Promotes Deals: Highlights promotions and discounts.</br>
+                2. Engages Visitors: Captures interest with attractive visuals.</br>
+                3. Streamlines Navigation: Makes it easy to find popular trips.</br>
+                4. Offers Variety: Appeals to different customer preferences.</br>
+                5. Builds Trust: Shows recent and credible offerings.</br>
+                6. Prompts Action: Encourages visitors to book or learn more.</br>
+                7. Personalizes Content: Can be tailored to individual users.</br>
+                8. Boosts SEO: Enhances search engine visibility.</br>
+                9. Competitive Edge: Aligns with industry standards and practices.</br> 
+
+                In essence, it improves user experience, drives bookings, and keeps you competitive in the cruise industry.
+
+              </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Map Of All The Harbours In South Africa
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <img src="assets/Locations-of-the-South-African-commercial-ports.png">
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              FAQ
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>1. What types of cruises do you offer?</strong></br>
+                We offer various cruise experiences, including family-friendly, romantic, adventure, and themed cruises.</br>
+            </br>
+                <strong>2. Where do your cruises depart from?</strong></br>
+                Our cruises depart from ports worldwide. Check our website for specific departure locations.</br>
+            </br>
+                <strong>3. What's included in the cruise fare?</strong></br>
+                Your cruise fare typically covers accommodations, meals, entertainment, and transportation to multiple destinations. Additional items may include excursions and specialty dining.</br>
+            </br>
+                <strong>4. Can I bring my family?</strong></br>
+                Yes, our cruises are family-friendly, with activities and amenities for all ages.</br>
+            </br>
+                <strong>5. Is there Wi-Fi on the ship?</strong></br>
+                Yes, we offer Wi-Fi services onboard for a fee.
+            </div>
+          </div>
         </div>
     </div>
     
@@ -67,56 +136,117 @@
                     <p class="trips-content">Duration: 5 Days</p>    
                     <p class="trips-content">Price: R10 000 pp</p>    
                     <p class="trips-content">Travel Dates: 03 November 2023</p>    
-                    <p class="trips-content">Departure: Durban Harbour <button type="button" class="deals-btn">View Deals</button></p>
+                    <p class="trips-content">Departure: Durban Harbour <button type="button" class="deals-btn" onclick="AddToCart(); SubmitTrip()">Add To Cart</button></p>
                     
                 </div>
                 <div class="col-5" id="trip-img">
                     <div class="overlay">
                         <div class="info">
-                            <button class="info-btn">More info</button>
+                          <button class="info-btn" data-bs-toggle="modal" data-bs-target="#infoModal">More info</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-
-            <div class="col-12" id="FT-col">
-                <div class="col-5" id="trip-img2">
-                    <div class="overlay2">
-                        <button class="info-btn">More info</button>
-                    </div>
+            <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel">Trip Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Caribbean Dreams Cruise - 5 Days of Paradise</h4>
+                    <p>Escape to the Caribbean on our "Caribbean Dreams" cruise, a 5-day tropical getaway that combines relaxation and adventure. Departing from Durban Harbour on November 3, 2023, this R10,000 per person package includes accommodations, meals, and a range of unforgettable experiences.</p>  
+                    <p>Explore picturesque Caribbean islands, snorkel in vibrant coral reefs, and immerse yourself in local culture. Onboard, enjoy gourmet dining, water sports, spa treatments, and dazzling entertainment. Book your Caribbean Dreams cruise for an unforgettable tropical adventure!</p>  
+                    <p>Hope to see you on this cruise</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
                 </div>
-                <div class="col-7" id="trip-con2">
-                    <p class="headings"><u>Norwegian Beaches</u></p>
-                    <p class="trips-content2">Location: Norway</p>
-                    <p class="trips-content2">Duration: 7 Days</p>    
-                    <p class="trips-content2">Price: R15 500 pp</p>    
-                    <p class="trips-content2">Travel Dates: 21 December 2023</p>    
-                    <p class="trips-content">Departure: Cape Town Harbour <button type="button" class="deals-btn">View Deals</button></p>
-                </div>
+              </div>
             </div>
 
-            <div class="col-12" id="FT-col">
-                <div class="col-7" id="trip-con">
-                    <p class="headings"><u>Thailand Round Trip</u></p>
-                    <p class="trips-content">Location: Thailand</p>
-                    <p class="trips-content">Duration: 14 Days</p>    
-                    <p class="trips-content">Price: R25 500 pp</p>    
-                    <p class="trips-content">Travel Dates: 25 December 2023</p>    
-                    <p class="trips-content">Departure: Durban Harbour <button type="button" class="deals-btn">View Deals</button></p>
-                </div>
-                <div class="col-5" id="trip-img">
-                    <div class="overlay">
-                        <button class="info-btn">More info</button>
-                    </div>
-                </div>
-            </div>
+            <!-- Add this code within your HTML document -->
+<div class="col-12" id="FT-col">
+  <div class="col-5" id="trip-img2">
+      <div class="overlay2">
+          <button class="info-btn" data-bs-toggle="modal" data-bs-target="#norwegianModal">More info</button>
+      </div>
+  </div>
+  <div class="col-7" id="trip-con2">
+      <p class="headings"><u>Norwegian Beaches</u></p>
+      <p class="trips-content2">Location: Norway</p>
+      <p class="trips-content2">Duration: 7 Days</p>    
+      <p class="trips-content2">Price: R15,500 pp</p>    
+      <p class="trips-content2">Travel Dates: 21 December 2023</p>    
+      <p class="trips-content2">Departure: Cape Town Harbour <button type="button" class="deals-btn" onclick="AddToCart(); SubmitTrip()">Add To Cart</button></p>
+  </div>
+</div>
+
+<div class="modal fade" id="norwegianModal" tabindex="-1" aria-labelledby="norwegianModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="norwegianModalLabel">Trip Information</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <h4>Norwegian Beaches Cruise - 7 Days of Exploration</h4>
+              <p>Discover the stunning beauty of Norway's coastline on our "Norwegian Beaches" cruise, a 7-day adventure departing from Cape Town Harbour on December 21, 2023. Priced at R15,500 per person, this package offers an unforgettable journey through Norway's picturesque landscapes.</p>
+              <p>Explore pristine beaches, fjords, and charming coastal towns. Indulge in local cuisine, take part in exciting excursions, and enjoy live entertainment on board. Join us for a Norwegian Beaches cruise that promises natural beauty and relaxation.</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="col-12" id="FT-col">
+  <div class="col-7" id="trip-con">
+      <p class="headings"><u>Thailand Round Trip</u></p>
+      <p class="trips-content">Location: Thailand</p>
+      <p class="trips-content">Duration: 14 Days</p>    
+      <p class="trips-content">Price: R25,500 pp</p>    
+      <p class="trips-content">Travel Dates: 25 December 2023</p>    
+      <p class="trips-content">Departure: Durban Harbour <button type="button" class="deals-btn" onclick="AddToCart(); SubmitTrip()">Add To Cart</button></p>
+  </div>
+  <div class="col-5" id="trip-img3">
+      <div class="overlay">
+          <button class="info-btn" data-bs-toggle="modal" data-bs-target="#thailandModal">More info</button>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="thailandModal" tabindex="-1" aria-labelledby="thailandModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="thailandModalLabel">Trip Information</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <h4>Thailand Round Trip - 14 Days of Adventure</h4>
+              <p>Embark on an epic journey with our "Thailand Round Trip" cruise, spanning 14 days of exploration in the enchanting land of Thailand. Departing from Durban Harbour on December 25, 2023, at R25,500 per person, this package offers an immersive Thai experience.</p>
+              <p>Discover Thailand's rich culture, visit historic temples, savor authentic Thai cuisine, and enjoy thrilling adventures. Whether you seek relaxation on pristine beaches or adventure in lush jungles, this cruise has it all.</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
     </div>
     <a href="pages/checkOut.html"><button type="button" class="imp-btn">CHECK OUT</button></a>
     <a href="pages/trips.html"><button type="button" class="imp-btn">MORE TRIPS</button></a>
     
     <footer>
-        <h1 id="name2">Golden Horizon</h1>
+        <div class="space"></div>
+
+        <h1 id="name2" class="nameF">Golden Horizon</h1>
 
         <img class="logo-img" src="assets/Logo.png">
 

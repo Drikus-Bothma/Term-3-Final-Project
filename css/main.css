@@ -66,6 +66,11 @@ nav{
     padding-left: 30px;
 }
 
+.accordion-item{
+    background-color: #0E262C;
+    color: white;
+}
+
 .headings{
     text-align: center;
     color: white;
@@ -232,18 +237,22 @@ footer{
 }
 
 #name2{
-    padding-top: 20px;
-    float: left;
     color: #DDC083;
     font-family: 'Didot', serif;
     font-size: 35px;
-    margin-left: 10px;
+    margin-left: 100px;
+    float: left;
+}
+
+.space{
+    width: 100px;
+    height: 17px;
 }
 
 .logo-img{
     height: 70px;
-    margin-top: 5px;
-    margin-left: 480px;
+    margin-left: -340px;
+    margin-top: -12px;
 }
 
 .social1{
@@ -253,7 +262,6 @@ footer{
     float: right;
     margin-left: 10px;
     margin-right: 50px;
-    margin-top: 15px;
 }
 
 .social2{
@@ -262,7 +270,7 @@ footer{
     height: 50px;
     float: right;
     margin-left: 10px;
-    margin-top: 15px;
+
 }
 
 .social3{
@@ -271,7 +279,7 @@ footer{
     height: 50px;
     float: right;
     margin-left: 10px;
-    margin-top: 15px;
+
 }
 
 .social4{
@@ -280,6 +288,6 @@ footer{
     height: 50px;
     float: right;
     margin-left: 10px;
-    margin-top: 15px;
+
 }
 
