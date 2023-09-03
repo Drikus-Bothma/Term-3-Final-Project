@@ -1,34 +1,38 @@
 
-![EvergreenLogo](/assets/readme/Readme_cover.png)
+![Golden Horizon](/assets/Logo.JPG)
 
 This is a demo project which aims to showcase more advanced javascript and jQuery to first year development students.
 
-[Watch the demo »]()
+[Watch the demo »](https://drive.google.com/drive/folders/1HVlFuTX8YJ-y2Cf1UulzB8Twe81VeL81?usp=drive_link)
 
 ## Table of Contents
 
 * [About the Project](#about-the-project)
    * [Home](#home)
-   * [Browse Plants](#browse-plants)
+   * [Trips Page](#trips-page)
+   * [Checkout Page](#checkout-page)
 * [Getting Started](#getting-started)
   * [Installing](#installing)
 * [Built With](#built-with)
-* [Contributing](#contributing)
 * [Authors](#authors)
 * [License](#license)
-* [Acknowledgements](#acknowledgements)
+
 
 ## About The Project
 
-Evergreen allows users to browse and filter different plants to find the perfect addition to their home.
+In this project we learned how to use JavaScript at a higher level. We learned about APIs and what they do. I had trouble with the sorting and filtering because I was in the hospital with my lung that had burst. This is also why my work is not at the standard it was last term. I did try and implement the code but something was off. 
 
 ### Home
 
-![EvergreenLogo](/assets/readme/readme_homepage.png)
+![Golden Horizon](/assets/readme_homepage%20copy.png)
 
-### Browse Plants
+### Trips Page
 
-![EvergreenLogo](/assets/readme/readme_browsepage.png)
+![Golden Horizon](/assets/readme_tripspage%20copy.png)
+
+### Checkout Page
+
+![Golden Horizon](/assets/readme_checkoutPage.png)
 
 ## Getting Started
 
@@ -38,7 +42,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Clone the repo
 ```sh
-git clone https://github.com/paulowi/DV100-T3-Class-Project-Test
+git clone https://github.com/Drikus-Bothma/Term-3-Final-Project.git
 ```
 2. Open the project
 
@@ -63,17 +67,11 @@ Contributions are what make the open source community such an amazing place to b
 
 ## Authors
 
-* **Paul Loots** - *Javascript & HTML* - [PaulLoots](https://github.com/PaulLoots)
-* **Carlo Kuyper** - *Open Weather API* - [CarloOpenWindow](https://github.com/CarloOpenWindow)
+* **Drikus Bothma** - *Javascript & HTML* - [DrikusBotma](https://github.com/Drikus-Bothma)
 
-See also the list of [contributors](https://github.com/paulowi/DV100-T3-Class-Project-Test/graphs/contributors) who participated in this project.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgements
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
